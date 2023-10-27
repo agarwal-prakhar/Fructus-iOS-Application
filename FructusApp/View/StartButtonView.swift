@@ -11,12 +11,15 @@ struct StartButtonView: View {
     
     //mark:- properties
     
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
+    
     //mark:- body
     
     var body: some View {
         
         Button(action: {
-            print("Exit the onboarding")
+           // print("Exit the onboarding")
+            isOnboarding = false
         })
         {
             HStack(spacing: 8) {
