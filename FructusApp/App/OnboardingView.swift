@@ -8,23 +8,24 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    //mark:properties
+    //MARK: - properties
     var fruits: [Fruit] = fruitsData
-    //mark: body
+    //MARK: - Body
+
     var body: some View {
         TabView{
             ForEach(fruits[0...5]){
                 item in
                 FruitCardView(fruit: item)
-            }//: loop
+            }//MARK: -loop
           
-        }// Tab
+        }//MARK: - Tab
         .tabViewStyle(PageTabViewStyle())
         .padding(.vertical, 20)
     }
 }
 
-//mark preview
+//MARK: - preview
 
 #Preview {
     OnboardingView(fruits: fruitsData )
