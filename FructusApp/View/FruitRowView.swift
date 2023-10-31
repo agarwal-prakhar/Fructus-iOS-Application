@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct FruitRowView: View {
-    //mark properties
+    //MARK: - properties
     var fruit: Fruit
     
-    //mark body
+    //MARK: - body
     
     
     var body: some View {

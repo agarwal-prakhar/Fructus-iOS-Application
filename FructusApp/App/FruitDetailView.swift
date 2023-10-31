@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct FruitDetailView: View {
-    //mark properties
+    //MARK: - properties
     
     var fruit: Fruit
-    //mark body
+    //MARK: - body
     
     
     var body: some View {
@@ -60,7 +60,9 @@ struct FruitDetailView: View {
                 .navigationBarHidden(true)
             }//SCROLL
             .edgesIgnoringSafeArea(.top)
-        }///NAVIGATION
+        }//NAVIGATION
+        
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

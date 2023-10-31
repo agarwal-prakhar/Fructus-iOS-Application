@@ -9,12 +9,12 @@ import SwiftUI
 
 struct FruitHeaderView: View {
     
-    //mark properties
+    //MARK: - properties
     
     var fruit: Fruit
     
     @State private var isAnimatingImage: Bool = false
-    //mark body
+    //MARK: - body
     
     var body: some View {
         ZStack{

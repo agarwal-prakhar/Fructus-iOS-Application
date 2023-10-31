@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ContentView: View { 
-    //mark properties
+    //MARK: - properties
     
     @State private var isShowingSettings: Bool = false
     
     var fruits: [Fruit] = fruitsData
     
-    //mark body
+    //MARK: - body
     
     var body: some View {
         
@@ -44,6 +44,7 @@ struct ContentView: View {
                     
             )
         }//navigation
+        .navigationViewStyle(StackNavigationViewStyle())
 
     }
 }
