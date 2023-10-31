@@ -24,20 +24,40 @@ struct SettingsView: View {
                     
                     GroupBox(
                         label:
-//                            HStack {
-//                                Text("Fructus".uppercased()).fontWeight(.bold)
-//                                Spacer()
-//                                Image(systemName: "info.circle")
-//                                
-//                            }
                         SettingsLabelView(labelText: "Fructus", labelImage: "info.circle")
                     )
                     {
-                        Text("Hello, World!")
+                        Divider().padding(.vertical, 4)
+                        HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10){
+                            Image("logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                                .cornerRadius(9)
+                            Text("Most Fruits are naturally low in fat, sodium, and calories. None have cholestrol. Fruits are sources of many essential nutrients, including potassium, dietary fiber, vitamins, and much more.")
+                                .font(.footnote)
+                        }
                     }
                     //MARK: SECTION 2
                     
                     //MARK: SECTION 3
+                    
+                    GroupBox(
+                        label:
+                        SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
+                    )
+                    {
+                        Divider().padding(.vertical, 4)
+                       
+                        SettingsRowView(labelKey: "Developer", labelValue: "Prakhar Agarwal")
+//                        HStack{
+//                            Text("Developer").foregroundColor(Color.gray)
+//                            Spacer()
+//                            Text("Prakhar Agarwal")
+//                        }
+                        
+                    }
+                    
                     
                 }//: VSTACK
                 .navigationBarTitle(Text("Settings"), displayMode: .large)
